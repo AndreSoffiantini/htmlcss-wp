@@ -28,6 +28,7 @@
     --margin-hero_photo: 1rem;
     --margin-footer: 2rem;
     --main-text-gutter: 2%;
+    --bonus-section-gutter: 4%;
     --border-radius: 0.5rem;
 }
 
@@ -102,25 +103,25 @@ body {
 
 /********* .Site_header **********/
 
-.site_header {
-    height: 80px;
-}
-
 .logo {
-    width: 100px;
+    width: 135px;
     border-right-style: solid;
     border-color: var(--primary-color);
     border-width: 1px;
     padding-right: 8px;
+    margin-bottom: 0.8rem;
 }
 
 .site_header .links {
     list-style: none;
+    height: 50px;
+    line-height: 50px;
+    vertical-align: middle;
 }
 
 .site_header .links li {
     float: left;
-    padding: 1.5rem 1rem 0 0;
+    padding-right: 1rem;
     font-size: 0.7rem;
     font-weight: bold;
 }
@@ -206,6 +207,16 @@ body {
 
 .main-text-container p {
     color: var(--primary-color);
+}
+
+.bonus-section {
+    width: 22%;
+    float: left;
+    margin-right: var(--bonus-section-gutter);
+}
+
+.final-section {
+    margin-right: 0;
 }
 
 
