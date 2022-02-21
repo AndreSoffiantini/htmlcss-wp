@@ -25,9 +25,8 @@
     /* Text color */
     --primary-color: rgb(191 186 186);
     /* Dimensions */
-    --margin-header-hero_photo: 2vh;
-    --margin-hero_photo-main_text: 2vh;
-    --margin-main_text-footer: 2vh;
+    --margin-hero_photo: 1rem;
+    --margin-footer: 2rem;
     --main-text-gutter: 2%;
     --border-radius: 0.5rem;
 }
@@ -38,11 +37,12 @@
 
 /* Debug */
 
-.debug .site_header {
+
+/* .debug .site_header {
     height: 68px;
-    /* background-color: var(--header-color); */
+    background-color: var(--header-color);
     margin-bottom: var(--margin-header-hero_photo);
-}
+} */
 
 
 /* .debug .site_main {
@@ -51,11 +51,12 @@
     margin-bottom: var(--margin-main_text-footer);
 } */
 
-.debug .hero-photo {
-    /* height: 42%; */
+
+/* .debug .hero-photo {
+    height: 42%;
     background-color: var(--hero-photo-color);
     margin-bottom: var(--margin-hero_photo-main_text);
-}
+} */
 
 
 /* .debug .main-text-header {
@@ -81,10 +82,11 @@
     margin: 0 var(--main-text-gutter);
 } */
 
-.debug .site_footer {
+
+/* .debug .site_footer {
     height: 6vh;
-    /* background-color: var(--footer-color); */
-}
+    background-color: var(--footer-color);
+} */
 
 
 /* /Debug */
@@ -100,12 +102,16 @@ body {
 
 /********* .Site_header **********/
 
+.site_header {
+    height: 80px;
+}
+
 .logo {
-    width: 6vw;
+    width: 100px;
     border-right-style: solid;
     border-color: var(--primary-color);
-    border-width: 0.1vw;
-    padding-right: 0.5vw;
+    border-width: 1px;
+    padding-right: 8px;
 }
 
 .site_header .links {
@@ -116,6 +122,7 @@ body {
     float: left;
     padding: 1.5rem 1rem 0 0;
     font-size: 0.7rem;
+    font-weight: bold;
 }
 
 .site_header .links a {
@@ -133,25 +140,23 @@ body {
 /***** .hero-photo *****/
 
 .hero-photo {
-    margin: var(--margin-header-hero_photo) 0;
-    background-image: url("../img/banner.jpg");
-    background-size: cover;
-    background-position: center;
-    height: 430px;
-    border-radius: var(--border-radius);
+    height: 480px;
+    margin: var(--margin-hero_photo) 0;
+    position: relative;
 }
 
-.hero-photo-text-container {
-    background-color: #00000045;
+.hero-photo>img {
+    width: 100%;
     height: 100%;
-    position: relative;
+    filter: brightness(85%);
+    object-fit: cover;
     border-radius: var(--border-radius);
 }
 
 .hero-photo-text {
     width: 50%;
     position: absolute;
-    left: 5%;
+    left: 4%;
     bottom: 10%;
     color: white;
 }
@@ -179,10 +184,6 @@ body {
 
 
 /***** .main-text-container *****/
-
-.main-text-container {
-    margin-bottom: var(--margin-main_text-footer);
-}
 
 .sidebar {
     width: 20%;
@@ -217,6 +218,7 @@ body {
 /********* .Site_footer **********/
 
 .site_footer {
+    margin-top: var(--margin-footer);
     text-align: center;
 }
 
