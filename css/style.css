@@ -37,7 +37,7 @@
 /* Debug */
 
 .debug .site_header {
-    height: 12vh;
+    height: 68px;
     /* background-color: var(--header-color); */
     margin-bottom: var(--margin-header-hero_photo);
 }
@@ -49,7 +49,7 @@
 }
 
 .debug .hero-photo {
-    height: 42%;
+    /* height: 42%; */
     background-color: var(--hero-photo-color);
     margin-bottom: var(--margin-hero_photo-main_text);
 }
@@ -87,7 +87,7 @@
 /**************************** Body *****************************/
 
 body {
-    width: 51vw;
+    width: 1177px;
     margin: auto;
 }
 
@@ -109,7 +109,7 @@ body {
 .site_header .links li {
     float: left;
     padding: 1.5rem 1rem 0 0;
-    font-size: 2vh;
+    font-size: 0.7rem;
 }
 
 .site_header .links a {
@@ -125,6 +125,28 @@ body {
 
 
 /***** .hero-photo *****/
+
+.hero-photo {
+    margin: var(--margin-header-hero_photo) 0;
+    background-image: url("../img/banner.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 430px;
+}
+
+.hero-photo-text-container {
+    background-color: #00000045;
+    height: 100%;
+    position: relative;
+}
+
+.hero-photo-text {
+    width: 50%;
+    position: absolute;
+    left: 5%;
+    bottom: 10%;
+    color: white;
+}
 
 
 /***** /.hero-photo *****/
