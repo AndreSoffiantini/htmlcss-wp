@@ -44,11 +44,12 @@
     margin-bottom: var(--margin-header-hero_photo);
 }
 
-.debug .site_main {
+
+/* .debug .site_main {
     height: 78vh;
-    /* background-color: var(--main-color); */
+    background-color: var(--main-color);
     margin-bottom: var(--margin-main_text-footer);
-}
+} */
 
 .debug .hero-photo {
     /* height: 42%; */
@@ -179,6 +180,10 @@ body {
 
 /***** .main-text-container *****/
 
+.main-text-container {
+    margin-bottom: var(--margin-main_text-footer);
+}
+
 .sidebar {
     width: 20%;
     float: left;
@@ -210,6 +215,14 @@ body {
 
 
 /********* .Site_footer **********/
+
+.site_footer {
+    text-align: center;
+}
+
+.like {
+    color: red;
+}
 
 
 /********* /.Site_footer **********/
