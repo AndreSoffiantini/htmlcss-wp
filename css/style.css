@@ -17,35 +17,77 @@
     --sidebar-color: #b7d2f0;
     --main-text-color: #7FB2C8;
     --main-header_text-color: #8CE3C4;
-    --main-photo-color: #B2EA85;
+    --hero-photo-color: #B2EA85;
     --footer-color: #e1e43b;
     --main-color: #EA8222;
     --header-color: #FEB1B1;
     /* Dimensions */
-    --margin-header-main_photo: 2vh;
-    --margin-main_photo-main_text: 2%;
+    --margin-header-hero_photo: 2vh;
+    --margin-hero_photo-main_text: 2vh;
     --margin-main_text-footer: 2vh;
-    --main-text-gutter: 1vh;
+    --main-text-gutter: 1vw;
 }
 
 
 /* /Common */
 
 
+/* Debug */
+
+.debug .site_header {
+    height: 12vh;
+    background-color: var(--header-color);
+    margin-bottom: var(--margin-header-hero_photo);
+}
+
+.debug .site_main {
+    height: 78vh;
+    background-color: var(--main-color);
+    margin-bottom: var(--margin-main_text-footer);
+}
+
+.debug .hero-photo {
+    height: 42%;
+    background-color: var(--hero-photo-color);
+    margin-bottom: var(--margin-hero_photo-main_text);
+}
+
+.debug .main-text-header {
+    height: 7vh;
+    background-color: var(--main-header_text-color);
+    margin-bottom: 1vh;
+}
+
+.debug .sidebar {
+    width: 10vw;
+    height: 35.3vh;
+    background-color: var(--sidebar-color);
+    float: left;
+}
+
+.debug .text {
+    float: left;
+    width: 58vw;
+    height: 35.3vh;
+    background-color: var(--main-text-color);
+    margin: 0 var(--main-text-gutter);
+}
+
+.debug .site_footer {
+    height: 6vh;
+    background-color: var(--footer-color);
+}
+
+
 /**************************** Body *****************************/
 
 body {
-    padding: 0 30%;
+    width: 80vw;
+    margin: auto;
 }
 
 
 /********* .Site_header **********/
-
-.site_header {
-    height: 12vh;
-    background-color: var(--header-color);
-    margin-bottom: var(--margin-header-main_photo);
-}
 
 
 /********* /.Site_header **********/
@@ -53,59 +95,14 @@ body {
 
 /********* .Site_main **********/
 
-.site_main {
-    height: 78vh;
-    background-color: var(--main-color);
-    margin-bottom: var(--margin-main_text-footer);
-}
+
+/***** .hero-photo *****/
 
 
-/***** .main-photo *****/
-
-.main-photo {
-    height: 42%;
-    background-color: var(--main-photo-color);
-    margin-bottom: var(--margin-main_photo-main_text);
-}
-
-
-/***** /.main-photo *****/
+/***** /.hero-photo *****/
 
 
 /***** .main-text-container *****/
-
-.main-text {
-    text-align: center;
-}
-
-.main-text-header {
-    height: 5vh;
-    background-color: var(--main-header_text-color);
-    margin-bottom: 1vh;
-}
-
-.sidebar {
-    width: 11vh;
-    height: 36vh;
-    background-color: var(--sidebar-color);
-}
-
-.sidebar-left {
-    float: left;
-    margin-right: var(--main-text-gutter);
-}
-
-.sidebar-right {
-    float: right;
-    margin-left: var(--main-text-gutter);
-}
-
-.text {
-    display: inline-block;
-    width: 61vh;
-    height: 36vh;
-    background-color: var(--main-text-color);
-}
 
 
 /***** /.main-text-container *****/
@@ -115,11 +112,6 @@ body {
 
 
 /********* .Site_footer **********/
-
-.site_footer {
-    height: 6vh;
-    background-color: var(--footer-color);
-}
 
 
 /********* /.Site_footer **********/
